@@ -83,6 +83,8 @@ public class PlayerSystemViaIf : MonoBehaviour
         }
     }
 
+    #region Behaviors
+
     private void MakeAllButtonsWhite()
     {
         var buttons = GameObject.FindGameObjectsWithTag("Button");
@@ -133,4 +135,6 @@ public class PlayerSystemViaIf : MonoBehaviour
         var gameObject = GameObject.Find("Idle");
         gameObject.GetComponent<Image>().color = Color.red;
     }
+
+    #endregion
 }

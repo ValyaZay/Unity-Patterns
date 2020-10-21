@@ -9,8 +9,6 @@ namespace MyAssets
         public void SetState(State state)
         {
             State = state;
-            State.ShowPossibleActions();
-            State.PresentCurrentState();
         }
     }
 }

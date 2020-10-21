@@ -7,4 +7,9 @@ public class LevelManager : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+    
+    public void LoadViaIfScene()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
