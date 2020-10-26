@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/MyAssets/Scenes/StateViaIf.unity
+    path: Assets/MyAssets/Patterns/StatePattern/StateViaIf.unity
     guid: 8a63be7929c03fb4bb840db29efcbfdd
   - enabled: 1
-    path: Assets/MyAssets/Scenes/StateViaPattern.unity
+    path: Assets/MyAssets/Patterns/StatePattern/StateViaPattern.unity
     guid: 83182ecf2cc656147ae28d781da9c335
   m_configObjects: {}
