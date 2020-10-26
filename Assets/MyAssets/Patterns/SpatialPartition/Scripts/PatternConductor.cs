@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using MyAssets.Patterns.SpatialPartition.Scripts;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -28,8 +29,12 @@ public class PatternConductor : MonoBehaviour
         foreach (var unit in units)
         {
             var cell = MyGrid.FindCellForUnit(unit.transform.position);
-            
             cell.AddUnit(unit);
+            var textComp = unit.GetComponentInChildren<TextMeshPro>();
+            if (textComp != null)
+            {
+                textComp.text = unit.name;
+            }
         }
     }
 
