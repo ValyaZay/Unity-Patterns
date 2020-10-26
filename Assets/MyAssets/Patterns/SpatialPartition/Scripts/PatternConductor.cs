@@ -36,11 +36,12 @@ public class PatternConductor : MonoBehaviour
     public void ShowCellsAndUnits()
     {
         var cells = MyGrid.GetCells();
-        
+        var showInfo = string.Empty;
         foreach (var cell in cells)
         {
             var cellInfo = cell.ToString();
-            text.text = cellInfo + "; ";
+            showInfo += "\n" + cellInfo;
         }
+        text.text = showInfo;
     }
 }

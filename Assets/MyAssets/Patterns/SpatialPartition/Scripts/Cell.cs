@@ -29,12 +29,11 @@ namespace MyAssets.Patterns.SpatialPartition.Scripts
 
         public override string ToString()
         {
-            var name = "Cell " + X + ", " + Y;
-            var myUnits = "My units are: ";
+            var name = "Cell " + X + ", " + Y + ":";
+            var myUnits = "\n\tMy units are: ";
             foreach (var unit in units)
             {
-                var unitName = "/n " + unit.ToString();
-                myUnits = myUnits + unitName + "; ";
+                myUnits = myUnits + unit.name + ", ";
             }
 
             return name + myUnits;
