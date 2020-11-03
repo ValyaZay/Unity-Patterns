@@ -11,7 +11,8 @@ public class LevelSetup : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        audioService = Locator.GetAudioService();
+        var gameStartup = new GameStartup();
+        audioService = gameStartup.AudioLocator.AudioService;
     }
 
     public void PlayLevelAudio()
