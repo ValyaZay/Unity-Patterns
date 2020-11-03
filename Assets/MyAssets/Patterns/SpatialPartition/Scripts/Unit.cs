@@ -8,11 +8,6 @@ namespace MyAssets.Patterns.SpatialPartition.Scripts
         private float currentUnitXPos;
         private float currentUnitYPos;
         
-        private void Start()
-        {
-            
-        }
-
         public override string ToString()
         {
             return transform.name;
@@ -30,8 +25,8 @@ namespace MyAssets.Patterns.SpatialPartition.Scripts
             currentUnitXPos = newXpos;
             currentUnitYPos = newYpos;
 
-            if (!Mathf.Approximately(currentCell.X, newCell.X)
-                && !Mathf.Approximately(currentCell.Y, newCell.Y))
+            if ((currentCell.X != newCell.X)
+                && (currentCell.Y != newCell.Y))
             {
                 currentCell.RemoveUnit(gameObject);
                 newCell.AddUnit(gameObject);
